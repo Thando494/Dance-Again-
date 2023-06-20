@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+main#app {
+    width: 80vw;
+    height: 80vh;
+    margin: 4rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+#map {
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+#console {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+#console > div {
+    padding: 1rem;
+}
+
+#pois {
+    background-color: #ffa500;
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 30%;
+}
+
+#info {
+    background-color: #fddb9c;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 70%;
+}
+
+@media (max-width: 800px) {
+    /* Your CSS rules for screens less than 600px */
+
+    main#app {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    #map {
+        height: 50vh;
+        margin-bottom: 1rem;
+    }
+
+    #console {
+        height: 40vh;
+    }
+}
